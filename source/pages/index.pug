@@ -1,16 +1,20 @@
-// Tab Selector
-input#tab-selector(type="hidden", name="attr_sheet_tab", value="overview-tab")
-div
-  button(type="action", name="act_overviewtab") Overview
-  button(type="action", name="act_spellstab") Spells
-  button(type="action", name="act_configurationtab") Configuration
+#enchant-sheet
+  #character-summary
+    include ../components/character-summary/character-summary
 
-// Include individual tab pages
-#overview-tab
-  include ./overview/overview
+  // Tab Selector
+  input#tab-selector(type="hidden", name="attr_sheet_tab", value="overview-tab")
+  div
+    button(type="action", name="act_overviewtab") Overview
+    button(type="action", name="act_spellstab") Spells
+    button(type="action", name="act_configurationtab") Configuration
 
-#spells-tab
-  include ./spells/spells
+  // Include individual tab pages
+  #overview-tab
+    include ./overview/overview
 
-#configuration-tab
-  include ./configuration/configuration
+  #spells-tab
+    include ./spells/spells
+
+  #configuration-tab
+    include ./configuration/configuration

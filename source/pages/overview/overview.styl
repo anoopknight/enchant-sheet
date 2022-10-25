@@ -1,0 +1,25 @@
+#overview-content {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "health armour    main  main" \
+                         "atb armour    main  main" \
+                         "atb armour    main  main";
+}
+
+#health
+    grid-area: health
+    background-color: lightgreen
+
+#armour
+    grid-area: armour
+    background-color: lavender
+
+#attributes 
+    grid-area: atb
+    background-color: pink
+
+#main 
+    grid-area: main
+    background-color: skyblue

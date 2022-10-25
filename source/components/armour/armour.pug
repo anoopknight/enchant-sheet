@@ -1,0 +1,14 @@
+.armour-container
+  - var physical_armour_names = ["Slashing", "Piercing", "Bludgeoning", "Poison"];
+  each armour in physical_armour_names 
+    .armour-row
+      label= armour
+      input(name="attr_character_" + armour, type="text")
+
+  br
+
+  - var magic_armour_names = ["Fire", "Hydro", "Frost", "Lightning", "Wind", "Nature", "Radiant", "Shadow", "Psychic"];
+  each armour in magic_armour_names 
+    .armour-row
+      label= armour
+      input(name="attr_character_" + armour, type="text")

@@ -1,0 +1,6 @@
+.attributes-container
+  - var attribute_names = ["Vigor", "Endurance", "Intelligence", "Strength", "Dexterity", "Awareness", "Arcana", "Faith", "Nature", "Charisma"];
+  each attr in attribute_names 
+    .attribute-row
+      label= attr
+      input(name="attr_character_" + attr, type="text")
