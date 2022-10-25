@@ -1,0 +1,18 @@
+// Configure the tabs
+#overview-tab,
+#spells-tab,
+#configuration-tab {
+    display: none;
+}
+
+// Show the selected tab
+#tab-selector[value="overviewtab"] ~ #overview-tab,
+#tab-selector[value="spellstab"] ~ #spells-tab,
+#tab-selector[value="configurationtab"] ~ #configuration-tab {
+    display: block;
+}
+
+// Import individual page styles 
+@import './overview/overview'
+@import './spells/spells'
+@import './configuration/configuration'
